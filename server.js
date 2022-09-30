@@ -40,7 +40,7 @@ const port = process.env.POST;
 mongoose.connect(process.env.DB_CONNECTION)
     .then(() => {
         app.listen(port, () => {
-            console.log(`listening on port ${port}`)
+            console.log(`listening on http://localhost:${port}/calculate`)
         })
     })
     .catch((err) => {
